@@ -245,6 +245,10 @@ function confirmOrder(productId) {
   }, 1000);
 
 
+  // Map product ID (web) -> product ID (server license)
+  const PRODUCT_MAP = { 'macropilot': 'macropilot', 'tiktok-auto-upload': 'tiktok_upload' };
+  const serverProduct = PRODUCT_MAP[productId] || productId.replace(/-/g, '_');
+
   // Luu don hang len server de xu ly tu dong khi CK den
   fetch('https://macropilot-license.onrender.com/api/pending-order', {
     method: 'POST',
@@ -256,6 +260,7 @@ function confirmOrder(productId) {
       months: plan.months || 1,
       note: email.split('@')[0],
       plan_name: plan.name,
+      product: serverProduct,
     })
   }).catch(() => {});
 
