@@ -1,5 +1,5 @@
 // products.js — YAKO_BIZ (Tao boi Product Manager v3)
-// Cap nhat luc: 04:28:09 02/04/2026
+// Cap nhat luc: 04:31:36 02/04/2026
 
 var PRODUCTS = [
   {
@@ -100,7 +100,7 @@ var PRODUCTS = [
     "badge": "Mới",
     "badgeColor": "#00e676",
     "category": "tiktok",
-    "status": "coming_soon",
+    "status": "active",
     "image": "images/Gemini_Generated_Image_wrhx88wrhx88wrhx.jfif",
     "downloadUrl": "https://github.com/yakonakswoa/TikTokAutoUpload/releases/latest/download/TikTokAutoUpload.zip",
     "fileSize": "~80 MB",
@@ -122,6 +122,7 @@ var PRODUCTS = [
     "guide": {
       "videoId": "",
       "desc": "TikTok Auto Upload giúp bạn đăng video hàng loạt lên TikTok từ máy tính mà không cần cầm điện thoại.",
+      "images": [],
       "steps": [],
       "faq": []
     }
