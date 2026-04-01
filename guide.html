@@ -62,8 +62,10 @@ h1{font-size:clamp(2rem,4vw,3rem);font-weight:900;line-height:1.15;letter-spacin
 .guide-gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;margin-top:16px}
 .guide-gallery-item{background:var(--card);border:1px solid var(--border);border-radius:12px;overflow:hidden;cursor:pointer;transition:transform .2s,border-color .2s}
 .guide-gallery-item:hover{transform:translateY(-2px);border-color:rgba(124,109,250,.3)}
-.guide-gallery-item img{width:100%;aspect-ratio:16/10;object-fit:cover;display:block}
+.guide-gallery-item img{width:100%;height:auto;display:block}
 .guide-gallery-item .gi-cap{padding:10px 14px;font-size:.82rem;color:var(--muted);line-height:1.5}
+.guide-gallery-single{max-width:100%;margin-top:16px}
+.guide-gallery-single .guide-gallery-item{max-width:800px}
 .lightbox{position:fixed;inset:0;background:rgba(0,0,0,.85);backdrop-filter:blur(8px);z-index:999;display:flex;align-items:center;justify-content:center;cursor:pointer;animation:fadeIn .2s}
 .lightbox img{max-width:90vw;max-height:85vh;border-radius:12px;box-shadow:0 20px 60px rgba(0,0,0,.5)}
 .lightbox .lb-cap{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);color:#fff;font-size:14px;font-weight:600;text-align:center;text-shadow:0 2px 8px rgba(0,0,0,.5)}
@@ -223,8 +225,8 @@ if (!p) {
   if (g.images && g.images.length) {
     imagesSection.innerHTML = `
       <div class="section-label">Lưu ý & Ví dụ</div>
-      <h2>Hình ảnh hướng dấn</h2>
-      <div class="guide-gallery">
+      <h2>Hình ảnh hướng dẫn</h2>
+      <div class="${g.images.length === 1 ? 'guide-gallery-single' : 'guide-gallery'}">
         ${g.images.map(img => `
           <div class="guide-gallery-item" onclick="openLightbox('${img.src}','${(img.caption||'').replace(/'/g, '\\\'')}')">
             <img src="${img.src}" alt="${img.caption||''}" loading="lazy">
