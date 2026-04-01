@@ -1,5 +1,5 @@
 // products.js — YAKO_BIZ (Tao boi Product Manager v3)
-// Cap nhat luc: 03:35:15 02/04/2026
+// Cap nhat luc: 03:41:04 02/04/2026
 
 var PRODUCTS = [
   {
@@ -94,7 +94,7 @@ var PRODUCTS = [
     "badge": "Mới",
     "badgeColor": "#00e676",
     "category": "tiktok",
-    "status": "coming_soon",
+    "status": "active",
     "image": "images/Gemini_Generated_Image_wrhx88wrhx88wrhx.jfif",
     "downloadUrl": "https://github.com/yakonakswoa/TikTokAutoUpload/releases/latest/download/TikTokAutoUpload.zip",
     "fileSize": "~80 MB",
