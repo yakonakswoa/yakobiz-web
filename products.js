@@ -1,5 +1,5 @@
 // products.js — YAKO_BIZ (Tao boi Product Manager v3)
-// Cap nhat luc: 03:50:23 02/04/2026
+// Cap nhat luc: 04:28:09 02/04/2026
 
 var PRODUCTS = [
   {
@@ -43,6 +43,12 @@ var PRODUCTS = [
     "guide": {
       "videoId": "https://www.youtube.com/watch?v=PZ1yFKFvg5U",
       "desc": "MacroPilot là phần mềm chạy trên Windows, kết nối điện thoại Android qua ADB (USB hoặc WiFi) để tự động hóa toàn bộ quy trình đăng video TikTok.",
+      "images": [
+        {
+          "src": "images/macropilot-guide-1775078849456.png",
+          "caption": "lưu ý tắt chọn nhiều video cho lần đầu tiên trên phone"
+        }
+      ],
       "steps": [
         {
           "title": "Tải & giải nén phần mềm",
