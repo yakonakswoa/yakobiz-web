@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hướng dẫn — YAKO_BIZ</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#08091a;--bg2:#0c0e20;--card:#111427;--border:rgba(255,255,255,0.07);--accent:#7c6dfa;--green:#00e676;--text:#e8eaf6;--muted:#6b7280;--r:16px}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);line-height:1.6;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+nav{position:sticky;top:0;z-index:100;background:rgba(8,9,26,.95);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);padding:0 40px;height:60px;display:flex;align-items:center;justify-content:space-between}
+.nav-brand{font-size:17px;font-weight:800}.nav-brand span{color:var(--accent)}
+.nav-back{display:flex;align-items:center;gap:6px;font-size:13px;font-weight:600;color:var(--muted);padding:7px 14px;border-radius:8px;border:1px solid var(--border);transition:all .2s;cursor:pointer}
+.nav-back:hover{color:var(--text);border-color:rgba(255,255,255,.2)}
+.container{max-width:900px;margin:0 auto;padding:0 24px}
+.hero{padding:60px 0 40px;border-bottom:1px solid var(--border)}
+.product-badge{display:inline-flex;align-items:center;gap:8px;padding:6px 14px;border-radius:100px;background:rgba(124,109,250,.1);border:1px solid rgba(124,109,250,.25);font-size:12px;font-weight:700;color:#b8b0ff;letter-spacing:1px;text-transform:uppercase;margin-bottom:16px}
+h1{font-size:clamp(2rem,4vw,3rem);font-weight:900;line-height:1.15;letter-spacing:-1px;margin-bottom:12px}
+.gradient{background:linear-gradient(135deg,var(--accent),#06b6d4);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero-sub{font-size:1rem;color:var(--muted);max-width:600px;line-height:1.7;margin-bottom:28px}
+.hero-tags{display:flex;flex-wrap:wrap;gap:8px}
+.tag{padding:5px 13px;border-radius:100px;background:rgba(255,255,255,.06);border:1px solid var(--border);font-size:12px;font-weight:600;color:var(--muted)}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+.btn-primary{display:inline-flex;align-items:center;gap:8px;padding:12px 24px;border-radius:11px;background:linear-gradient(135deg,var(--accent),#6c5fd0);color:#fff;font-size:.9rem;font-weight:700;transition:opacity .2s,transform .2s}
+.btn-primary:hover{opacity:.88;transform:translateY(-2px)}
+.btn-ghost{display:inline-flex;align-items:center;gap:6px;padding:12px 20px;border-radius:11px;border:1px solid var(--border);color:var(--muted);font-size:.9rem;font-weight:600;transition:all .2s}
+.btn-ghost:hover{border-color:rgba(255,255,255,.2);color:var(--text)}
+.section{padding:56px 0;border-bottom:1px solid var(--border)}
+.section-label{font-size:11px;font-weight:800;color:var(--accent);letter-spacing:2px;text-transform:uppercase;margin-bottom:14px}
+.section h2{font-size:1.5rem;font-weight:800;margin-bottom:20px}
+.video-container{position:relative;border-radius:14px;border:1px solid var(--border);background:#000;box-shadow:0 20px 60px rgba(0,0,0,.5);overflow:hidden}
+.video-container iframe{width:100%;aspect-ratio:16/9;border:none;display:block}
+.video-thumb{position:relative;cursor:pointer;display:block}
+.video-thumb img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block;transition:opacity .3s}
+.video-thumb:hover img{opacity:.75}
+.video-play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:72px;height:72px;background:rgba(255,0,0,.9);border-radius:50%;display:flex;align-items:center;justify-content:center;transition:transform .2s,background .2s}
+.video-play::after{content:'';width:0;height:0;border-style:solid;border-width:14px 0 14px 24px;border-color:transparent transparent transparent #fff;margin-left:4px}
+.video-thumb:hover .video-play{transform:translate(-50%,-50%) scale(1.1);background:rgba(255,0,0,1)}
+.video-note{margin-top:12px;font-size:.82rem;color:var(--muted);text-align:center}
+.no-video{padding:60px;text-align:center;color:var(--muted);border:2px dashed var(--border);border-radius:14px;font-size:.9rem}
+.desc-text{font-size:.95rem;color:var(--muted);line-height:1.85}
+.desc-text p{margin-bottom:12px}
+.steps{display:flex;flex-direction:column;gap:20px;margin-top:8px}
+.step-item{display:flex;gap:16px;align-items:flex-start}
+.step-num{width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,var(--accent),#6c5fd0);display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:800;flex-shrink:0}
+.step-content h4{font-size:.95rem;font-weight:700;margin-bottom:4px}
+.step-content p{font-size:.85rem;color:var(--muted);line-height:1.6}
+.faq-list{display:flex;flex-direction:column;gap:12px;margin-top:8px}
+.faq-item{background:var(--card);border:1px solid var(--border);border-radius:12px;overflow:hidden}
+.faq-q{padding:16px 20px;font-size:.9rem;font-weight:700;cursor:pointer;display:flex;justify-content:space-between;align-items:center;user-select:none;transition:background .2s}
+.faq-q:hover{background:rgba(255,255,255,.03)}
+.faq-q .arrow{font-size:11px;color:var(--muted);transition:transform .2s;flex-shrink:0;margin-left:12px}
+.faq-item.open .faq-q .arrow{transform:rotate(180deg)}
+.faq-a{display:none;padding:0 20px 16px;font-size:.85rem;color:var(--muted);line-height:1.7}
+.faq-item.open .faq-a{display:block}
+.cta-box{background:linear-gradient(135deg,rgba(124,109,250,.15),rgba(6,182,212,.08));border:1px solid rgba(124,109,250,.25);border-radius:var(--r);padding:40px;text-align:center;margin:56px 0}
+.cta-box h3{font-size:1.4rem;font-weight:800;margin-bottom:10px}
+.cta-box p{font-size:.9rem;color:var(--muted);margin-bottom:24px}
+.cta-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+footer{text-align:center;padding:32px;color:var(--muted);font-size:.82rem;border-top:1px solid var(--border)}
+#not-found{text-align:center;padding:120px 24px;color:var(--muted)}
+@media(max-width:640px){nav{padding:0 16px}.container{padding:0 16px}.hero-actions,.cta-btns{flex-direction:column}.btn-primary,.btn-ghost{justify-content:center}}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-brand">⚡ YAKO<span>_BIZ</span></a>
+  <div class="nav-back" onclick="history.back()">← Quay lại</div>
+</nav>
+
+<div id="not-found" style="display:none">
+  <div style="font-size:3rem;margin-bottom:16px">🔍</div>
+  <div style="font-size:1.2rem;font-weight:700;margin-bottom:8px">Không tìm thấy sản phẩm</div>
+  <a href="index.html" style="color:var(--accent)">← Về trang chủ</a>
+</div>
+
+<div id="guide-content" style="display:none">
+  <div class="container">
+
+    <!-- HERO -->
+    <section class="hero" id="section-hero"></section>
+
+    <!-- VIDEO -->
+    <section class="section" id="section-video"></section>
+
+    <!-- MÔ TẢ -->
+    <section class="section" id="section-desc"></section>
+
+    <!-- HƯỚNG DẪN -->
+    <section class="section" id="section-steps"></section>
+
+    <!-- FAQ -->
+    <section class="section" id="section-faq"></section>
+
+    <!-- CTA -->
+    <div class="cta-box" id="section-cta"></div>
+
+  </div>
+</div>
+
+<footer>
+  <p>© 2026 YAKO_BIZ · <a href="index.html" style="color:var(--accent)">Trang chủ</a> · <a href="download.html" style="color:var(--accent)">Tải về</a> · <a href="https://zalo.me/0961429053" style="color:var(--accent)">Zalo hỗ trợ</a></p>
+</footer>
+
+<script src="products.js"></script>
+<script>
+// MERGE: Dong bo trang thai san pham tu admin panel (localStorage)
+try {
+  const _lsP = localStorage.getItem('yakobiz_products');
+  if (_lsP) {
+    const _cached = JSON.parse(_lsP);
+    if (Array.isArray(_cached) && _cached.length) {
+      const _map = {};
+      _cached.forEach(p => { if (p.id) _map[p.id] = p; });
+      window.PRODUCTS = PRODUCTS.map(p => _map[p.id] ? Object.assign({}, p, _map[p.id]) : p);
+      _cached.forEach(p => { if (p.id && !PRODUCTS.find(x => x.id === p.id)) window.PRODUCTS.push(p); });
+    }
+  }
+} catch(e) {}
+
+// Đọc ?id= từ URL
+const params = new URLSearchParams(location.search);
+const id = params.get('id');
+const p = PRODUCTS.find(x => x.id === id);
+
+if (!p) {
+  document.getElementById('not-found').style.display = 'block';
+} else {
+  document.title = p.name + ' — Hướng dẫn sử dụng | YAKO_BIZ';
+  document.getElementById('guide-content').style.display = 'block';
+
+  const g = p.guide || {};
+  // Tự động trích ID nếu videoId là full URL
+  if (g.videoId && g.videoId.includes('youtube')) {
+    const m = g.videoId.match(/(?:v=|youtu\.be\/|embed\/)([A-Za-z0-9_-]{11})/);
+    if (m) g.videoId = m[1];
+  }
+  const minPrice = p.plans && p.plans.length ? Math.min(...p.plans.map(pl => pl.price)) : 0;
+
+  // ── HERO ──────────────────────────────────────────────────────
+  document.getElementById('section-hero').innerHTML = `
+    <div class="product-badge">${p.icon || '📦'} ${p.name} · Hướng dẫn sử dụng</div>
+    <h1><span class="gradient">${p.name}</span></h1>
+    <p class="hero-sub">${g.desc || p.description || ''}</p>
+    <div class="hero-tags">
+      <span class="tag">🪟 ${p.platform || 'Windows 10/11'}</span>
+      <span class="tag">🏷 v${p.version || '1.0.0'}</span>
+      <span class="tag">💾 ${p.fileSize || ''}</span>
+    </div>
+    <div class="hero-actions">
+      ${p.downloadUrl && p.status === 'active' ? `<a href="download.html" class="btn-primary">⬇️ Tải về miễn phí</a>` : ''}
+      <a href="index.html#products" class="btn-ghost">🛒 ${minPrice ? 'Key từ ' + minPrice.toLocaleString('vi-VN') + '₫' : 'Xem giá'}</a>
+    </div>
+  `;
+
+  // ── VIDEO ──────────────────────────────────────────────────────
+  const videoSection = document.getElementById('section-video');
+  if (g.videoId) {
+    const isLocal = location.protocol === 'file:';
+    const embedUrl = `https://www.youtube.com/embed/${g.videoId}?rel=0&modestbranding=1`;
+    const thumbUrl = `https://img.youtube.com/vi/${g.videoId}/maxresdefault.jpg`;
+    const thumbFallback = `https://img.youtube.com/vi/${g.videoId}/hqdefault.jpg`;
+
+    if (isLocal) {
+      // Local file:// → thumbnail click mở YouTube
+      videoSection.innerHTML = `
+        <div class="section-label">Video hướng dẫn</div>
+        <h2>Xem thực tế ${p.name} hoạt động</h2>
+        <a href="https://www.youtube.com/watch?v=${g.videoId}" target="_blank" rel="noopener" class="video-container">
+          <div class="video-thumb">
+            <img src="${thumbUrl}" onerror="this.src='${thumbFallback}'" alt="${p.name}">
+            <div class="video-play"></div>
+          </div>
+        </a>
+        <p class="video-note">Nhấn để xem video trên YouTube (đang xem local)</p>
+      `;
+    } else {
+      // HTTP/HTTPS (deployed) → nhúng iframe trực tiếp
+      videoSection.innerHTML = `
+        <div class="section-label">Video hướng dẫn</div>
+        <h2>Xem thực tế ${p.name} hoạt động</h2>
+        <div class="video-container">
+          <iframe src="${embedUrl}" title="${p.name} - Hướng dẫn"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+        <p class="video-note">Xem video hướng dẫn đầy đủ ngay trên trang</p>
+      `;
+    }
+  } else {
+    videoSection.style.display = 'none';
+  }
+
+  // ── MÔ TẢ ─────────────────────────────────────────────────────
+  const descSection = document.getElementById('section-desc');
+  if (g.desc) {
+    descSection.innerHTML = `
+      <div class="section-label">Mô tả sản phẩm</div>
+      <h2>${p.name} là gì?</h2>
+      <div class="desc-text">${g.desc.split('\n').map(line => `<p>${line}</p>`).join('')}</div>
+    `;
+  } else {
+    descSection.style.display = 'none';
+  }
+
+  // ── STEPS ─────────────────────────────────────────────────────
+  const stepsSection = document.getElementById('section-steps');
+  if (g.steps && g.steps.length) {
+    stepsSection.innerHTML = `
+      <div class="section-label">Hướng dẫn từng bước</div>
+      <h2>Cách cài đặt & sử dụng</h2>
+      <div class="steps">
+        ${g.steps.map((s, i) => `
+          <div class="step-item">
+            <div class="step-num">${i + 1}</div>
+            <div class="step-content">
+              <h4>${s.title}</h4>
+              <p>${s.desc}</p>
+            </div>
+          </div>
+        `).join('')}
+      </div>
+    `;
+  } else {
+    stepsSection.style.display = 'none';
+  }
+
+  // ── FAQ ───────────────────────────────────────────────────────
+  const faqSection = document.getElementById('section-faq');
+  if (g.faq && g.faq.length) {
+    faqSection.innerHTML = `
+      <div class="section-label">Câu hỏi thường gặp</div>
+      <h2>FAQ</h2>
+      <div class="faq-list">
+        ${g.faq.map(item => `
+          <div class="faq-item">
+            <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+              ${item.q} <span class="arrow">▼</span>
+            </div>
+            <div class="faq-a">${item.a}</div>
+          </div>
+        `).join('')}
+      </div>
+    `;
+  } else {
+    faqSection.style.display = 'none';
+  }
+
+  // ── CTA ───────────────────────────────────────────────────────
+  document.getElementById('section-cta').innerHTML = `
+    <h3>Sẵn sàng dùng ${p.name}?</h3>
+    <p>Tải miễn phí — mua key để kích hoạt. Hỗ trợ setup 1-1 qua Zalo.</p>
+    <div class="cta-btns">
+      ${p.downloadUrl && p.status === 'active' ? `<a href="download.html" class="btn-primary">⬇️ Tải ${p.name}</a>` : ''}
+      <a href="index.html#products" class="btn-ghost">💳 Xem bảng giá</a>
+      <a href="https://zalo.me/0961429053" target="_blank" class="btn-ghost">💬 Hỗ trợ Zalo</a>
+    </div>
+  `;
+}
+</script>
+</body>
+</html>

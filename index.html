@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YAKO_BIZ — Phần mềm tự động hoá & Tài nguyên MMO</title>
+<meta name="description" content="YAKO_BIZ cung cấp phần mềm tự động hoá, tool MMO, tài nguyên kiếm tiền online chuyên nghiệp cho anh em Việt Nam.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <div class="logo">
+      <span class="logo-icon">⚡</span>
+      <span class="logo-text">YAKO<span class="logo-accent">_BIZ</span></span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#products">Sản phẩm</a></li>
+      <li><a href="download.html">Tải về</a></li>
+      <li><a href="#why">Vì sao chọn</a></li>
+      <li><a href="#contact">Liên hệ</a></li>
+    </ul>
+    <a href="download.html" class="nav-cta">⬇️ Tải về</a>
+    <button class="nav-mobile-btn" onclick="toggleMobileMenu()">☰</button>
+  </div>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#products" onclick="toggleMobileMenu()">Sản phẩm</a>
+    <a href="download.html" onclick="toggleMobileMenu()">Tải về</a>
+    <a href="#why" onclick="toggleMobileMenu()">Vì sao chọn</a>
+    <a href="#contact" onclick="toggleMobileMenu()">Liên hệ</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg">
+    <div class="orb orb1"></div>
+    <div class="orb orb2"></div>
+    <div class="grid-overlay"></div>
+  </div>
+  <div class="container hero-content">
+    <div class="badge"><span class="badge-dot"></span>Tool tự động — Tài nguyên MMO — Dev theo yêu cầu</div>
+    <div style="font-size:.75rem;color:rgba(255,255,255,.3);margin-top:8px;margin-bottom:4px;letter-spacing:.5px">by <span style="color:rgba(255,255,255,.5);font-weight:600">NGUYỄN QUỐC TUẤN</span></div>
+    <h1 class="hero-title">Shop tool của<br><span class="gradient-text">YAKO_BIZ</span></h1>
+    <p class="hero-sub">Nơi bán các sản phẩm tự động hoá giúp quy trình tiện lợi — nhận làm tool theo yêu cầu, an toàn bảo mật — cùng đủ mặt hàng khác hỗ trợ anh em MMO.</p>
+    <div class="hero-actions">
+      <a href="#products" class="btn-primary">Xem tất cả sản phẩm ↓</a>
+      <a href="download.html" class="btn-ghost">⬇️ Tải phần mềm</a>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="section" id="products">
+  <div class="container">
+    <div class="section-tag">Sản phẩm</div>
+    <h2 class="section-title">Tất cả công cụ của <span class="gradient-text">YAKO_BIZ</span></h2>
+    <p class="section-sub">Chọn sản phẩm phù hợp với nhu cầu của bạn. Hỗ trợ trực tiếp qua Zalo.</p>
+
+    <!-- Category Filter -->
+    <div class="filter-row" id="filter-row">
+      <button class="filter-btn active" onclick="filterProducts('all', this)">Tất cả</button>
+      <button class="filter-btn" onclick="filterProducts('tiktok', this)">TikTok</button>
+      <button class="filter-btn" onclick="filterProducts('other', this)">Khác</button>
+    </div>
+
+    <!-- Products Grid — tự động tạo từ products.js -->
+    <div class="products-grid" id="products-grid"></div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE -->
+<section class="section section--dark" id="why">
+  <div class="container">
+    <div class="section-tag">Vì sao chọn YAKO_BIZ</div>
+    <h2 class="section-title">Cam kết từ<br><span class="gradient-text">người làm thật</span></h2>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-icon">⚡</div>
+        <h3>Kích hoạt tức thì</h3>
+        <p>Thanh toán xong → Key gửi về email ngay. Không cần chờ đợi, không cần gửi mã máy.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">🛡️</div>
+        <h3>Bảo hành nghiêm túc</h3>
+        <p>Phần mềm lỗi nghiêm trọng? Hoàn tiền 100% trong 24h. Cam kết rõ ràng, không chạy trốn.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">🔄</div>
+        <h3>Cập nhật miễn phí</h3>
+        <p>TikTok cập nhật? Phần mềm bị hỏng? Chúng tôi vá trong 24–48h. Không cần mua lại.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">💬</div>
+        <h3>Hỗ trợ 24/7 Zalo</h3>
+        <p>Gặp vấn đề bất kỳ lúc nào? Nhắn Zalo là có người phản hồi. Không bỏ rơi khách.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+  <div class="container">
+    <div class="section-tag">Liên hệ</div>
+    <h2 class="section-title">Cần tư vấn? <span class="gradient-text">Nhắn ngay</span></h2>
+    <div class="contact-box" id="contact-box">
+      <!-- Tự động điền từ SITE config -->
+    </div>
+  </div>
+</section>
+
+<!-- MODAL mua hang -->
+<div class="modal-overlay" id="modal" onclick="closeModal(event)">
+  <div class="modal-box" id="modal-box"></div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+      <div class="footer-inner">
+        <div>
+          <span class="logo-icon">⚡</span>
+          <span class="logo-text">YAKO<span class="logo-accent">_BIZ</span></span>
+          <p class="footer-sub">Phần mềm tự động hóa chuyên nghiệp</p>
+          <p style="font-size:.75rem;color:rgba(255,255,255,.3);margin-top:4px">by <span style="color:rgba(255,255,255,.45);font-weight:600">NGUYỄN QUỐC TUẤN</span></p>
+        </div>
+        <p class="footer-note">© 2026 YAKO_BIZ — NGUYỄN QUỐC TUẤN. Mọi quyền được bảo lưu.</p>
+      </div>
+  </div>
+</footer>
+
+<script src="products.js"></script>
+<script>
+// MERGE: products.js la danh sach goc, localStorage chi override tung san pham theo ID
+try {
+  const _lsP = localStorage.getItem('yakobiz_products');
+  const _lsS = localStorage.getItem('yakobiz_site');
+  if (_lsP) {
+    const _cached = JSON.parse(_lsP);
+    if (Array.isArray(_cached) && _cached.length) {
+      const _map = {};
+      _cached.forEach(p => { if (p.id) _map[p.id] = p; });
+      // San pham tu products.js duoc giu, override bang ban admin neu co
+      window.PRODUCTS = PRODUCTS.map(p => _map[p.id] ? Object.assign({}, p, _map[p.id]) : p);
+      // Them san pham moi tu localStorage ma products.js chua co
+      _cached.forEach(p => { if (p.id && !PRODUCTS.find(x => x.id === p.id)) window.PRODUCTS.push(p); });
+    }
+  }
+  if (_lsS) { const _s = JSON.parse(_lsS); if (_s) window.SITE = Object.assign(window.SITE || {}, _s); }
+} catch(e) {}
+</script>
+<script src="script.js"></script>
+</body>
+</html>
