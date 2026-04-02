@@ -150,7 +150,11 @@ function confirmOrder(productId) {
   const plan = plans[_selectedPlanIndex];
   const amount = plan.price;
   const _rnd = Math.random().toString(36).substring(2,6).toUpperCase();
-  const contentCK = `YAKOBIZ ${productName.toUpperCase().replace(/\s/g,'')} ${email.split('@')[0].toUpperCase()} ${_rnd}`;
+  // Dùng mã ngắn thay vì tên đầy đủ để tránh MB Bank cắt nội dung (giới hạn ~40 ký tự)
+  const PRODUCT_SHORT = { 'macropilot': 'MACRO', 'tiktok-auto-upload': 'TTAU' };
+  const productCode = PRODUCT_SHORT[productId] || productId.replace(/-/g,'').substring(0,8).toUpperCase();
+  const contentCK = `YAKOBIZ ${productCode} ${email.split('@')[0].toUpperCase()} ${_rnd}`;
+  // VD: "YAKOBIZ TTAU YAKONAKSWOA K2VY" = 29 ký tự (an toàn)
 
   // VietQR — compact template, tỉ lệ tự nhiên
   const qrUrl = `https://img.vietqr.io/image/${SITE.bank_id}-${SITE.bank_number}-compact.png`
