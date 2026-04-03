@@ -1,5 +1,5 @@
 // products.js — YAKO_BIZ (Tao boi Product Manager v3)
-// Cap nhat luc: 14:20:43 03/04/2026
+// Cap nhat luc: 14:24:20 03/04/2026
 
 var PRODUCTS = [
   {
@@ -161,9 +161,9 @@ var PRODUCTS = [
     },
     "description": "Edit video dạng duet blur số lượng lớn. Tự động chọn video nền ngẫu nhiên, ghép và làm mờ chuyên nghiệp. Tích hợp FFmpeg, chạy portable.",
     "badge": "Free",
-    "badgeColor": "#16a34a",
+    "badgeColor": "#5900ff",
     "downloadUrl": "https://github.com/yakonakswoa/YakoGameEdit-Release/releases/download/v1.0/YakoGameEdit.zip",
-    "image": "images/duet-blur.jpg",
+    "image": "images/duet-blur.jfif",
     "version": "1.0.0",
     "fileSize": "201 MB",
     "platform": "Windows 10/11"
