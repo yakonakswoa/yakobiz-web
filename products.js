@@ -169,6 +169,71 @@ var PRODUCTS = [
     "platform": "Windows 10/11"
   },
   {
+    "id": "cutvideoshort",
+    "name": "CutVideoShort",
+    "tagline": "Ghép video thông minh — Tạo hàng trăm video unique chỉ 1 click",
+    "description": "Ghép nhiều video clip với 33+ chuyển cảnh chuyên nghiệp. Xuất hàng loạt lên đến 500 video, mỗi video thứ tự khác nhau. Tối ưu TikTok 9:16. FFmpeg đi kèm, không cần cài riêng.",
+    "icon": "✂️",
+    "badge": "Free",
+    "badgeColor": "#e94560",
+    "category": "tiktok",
+    "status": "active",
+    "free": true,
+    "image": "images/cutvideoshort.jfif",
+    "downloadUrl": "https://github.com/yakonakswoa/cutvideoshort/releases/latest/download/cutvideoshort.zip",
+    "version": "1.0.0",
+    "fileSize": "~270 MB",
+    "platform": "Windows 10/11",
+    "features": [
+      "33+ hiệu ứng chuyển cảnh",
+      "Batch xuất 1-500 video cùng lúc",
+      "Smart Random — không trùng hoán vị",
+      "2 chế độ: Giữ nguyên / Cắt theo giây",
+      "Tối ưu TikTok 9:16 & YouTube 16:9",
+      "Tắt âm thanh (mute) tùy chọn",
+      "FFmpeg đi kèm, chạy portable",
+      "Miễn phí hoàn toàn"
+    ],
+    "plans": [],
+    "guide": {
+      "videoId": "",
+      "desc": "CutVideoShort giúp bạn ghép nhiều video clip thành sản phẩm hoàn chỉnh với hiệu ứng chuyển cảnh ngẫu nhiên. Đặc biệt phù hợp cho TikToker cần tạo nhiều video unique từ cùng bộ clip gốc.",
+      "images": [],
+      "steps": [
+        {
+          "title": "Tải & giải nén",
+          "desc": "Tải file ZIP từ nút Download. Giải nén ra thư mục bất kỳ. Chạy file cutvideoshort.exe — không cần cài đặt."
+        },
+        {
+          "title": "Thêm video nguồn",
+          "desc": "Bấm '➕ Thêm Video' để chọn từng file hoặc '📂 Thêm Thư Mục' để import cả folder. Hỗ trợ MP4, AVI, MKV, MOV, WebM..."
+        },
+        {
+          "title": "Chọn cài đặt",
+          "desc": "Chọn số clip ghép, chế độ cắt (giữ nguyên/cắt theo giây), thời gian chuyển cảnh, số video xuất, độ phân giải và FPS."
+        },
+        {
+          "title": "Xuất video",
+          "desc": "Chọn thư mục xuất → bấm '🚀 BẮT ĐẦU GHÉP'. Mỗi video sẽ có thứ tự clip và chuyển cảnh khác nhau!"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Có cần cài FFmpeg không?",
+          "a": "Không. FFmpeg đã được tích hợp sẵn trong phần mềm, bạn chỉ cần giải nén và chạy."
+        },
+        {
+          "q": "Có giới hạn số video xuất không?",
+          "a": "Tối đa 500 video mỗi lần. Mỗi video đều có thứ tự clip và hiệu ứng chuyển cảnh khác nhau."
+        },
+        {
+          "q": "Hỗ trợ định dạng video nào?",
+          "a": "MP4, AVI, MKV, MOV, WMV, FLV, WebM, TS, M4V — hầu hết định dạng phổ biến."
+        }
+      ]
+    }
+  },
+  {
     "id": "tiktok-checker",
     "name": "TikTok-Checker",
     "tagline": "Kiểm tra bản quyền video TikTok số lượng lớn",
