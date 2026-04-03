@@ -1,5 +1,5 @@
 // products.js — YAKO_BIZ (Tao boi Product Manager v3)
-// Cap nhat luc: 07:40:00 03/04/2026
+// Cap nhat luc: 09:25:07 03/04/2026
 
 var PRODUCTS = [
   {
@@ -127,6 +127,31 @@ var PRODUCTS = [
       "steps": [],
       "faq": []
     }
+  },
+  {
+    "id": "duet blur",
+    "name": "duet blur",
+    "tagline": "edit video duet làm mờ giữa ngẫu nhiên video phụ số lượng lớn",
+    "icon": "📦",
+    "status": "active",
+    "category": "tiktok",
+    "features": [],
+    "plans": [],
+    "guide": {
+      "videoId": "",
+      "desc": "",
+      "images": [],
+      "steps": [],
+      "faq": []
+    },
+    "description": null,
+    "badge": "Mới",
+    "badgeColor": "#ff6161",
+    "downloadUrl": null,
+    "image": "images/duet blur.jpg",
+    "version": "1.0.0",
+    "fileSize": "6 MB",
+    "platform": "Windows 10/11"
   }
 ];
 
