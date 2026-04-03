@@ -167,6 +167,51 @@ var PRODUCTS = [
     "version": "1.0.0",
     "fileSize": "201 MB",
     "platform": "Windows 10/11"
+  },
+  {
+    "id": "tiktok-checker",
+    "name": "TikTok Checker",
+    "tagline": "Kiểm tra bản quyền video TikTok, đổi tên hàng loạt, chỉnh avatar",
+    "icon": "🔍",
+    "status": "active",
+    "category": "tiktok",
+    "free": true,
+    "features": [
+      "Kiểm tra bản quyền video TikTok",
+      "Quản lý đa tài khoản",
+      "Đổi tên video hàng loạt",
+      "Chỉnh kích thước avatar",
+      "Chuyển/xóa video vi phạm",
+      "Miễn phí hoàn toàn"
+    ],
+    "plans": [],
+    "guide": {
+      "videoId": "",
+      "desc": "TikTok Checker giúp bạn kiểm tra bản quyền video trước khi đăng TikTok. Phát hiện video vi phạm, đổi tên hàng loạt và chỉnh avatar.",
+      "steps": [
+        {
+          "title": "Tải & giải nén",
+          "desc": "Tải file ZIP, giải nén ra thư mục bất kỳ."
+        },
+        {
+          "title": "Thêm tài khoản",
+          "desc": "Nhập Cookie TikTok và ID kênh để kết nối tài khoản."
+        },
+        {
+          "title": "Chọn video & kiểm tra",
+          "desc": "Chọn video cần kiểm tra → nhấn 'Bắt đầu Kiểm Tra'. Kết quả hiện ngay."
+        }
+      ],
+      "faq": []
+    },
+    "description": "Kiểm tra bản quyền video TikTok tự động. Phát hiện video vi phạm, đổi tên hàng loạt, chỉnh avatar. Hỗ trợ đa tài khoản.",
+    "badge": "Free",
+    "badgeColor": "#16a34a",
+    "downloadUrl": "https://github.com/yakonakswoa/TikTokChecker-Release/releases/download/v1.0/TikTokChecker.zip",
+    "image": null,
+    "version": "1.0.0",
+    "fileSize": "316 MB",
+    "platform": "Windows 10/11"
   }
 ];
 
