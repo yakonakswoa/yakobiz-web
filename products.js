@@ -129,12 +129,13 @@ var PRODUCTS = [
     }
   },
   {
-    "id": "duet blur",
-    "name": "duet blur",
-    "tagline": "edit video duet làm mờ giữa ngẫu nhiên video phụ số lượng lớn",
-    "icon": "📦",
+    "id": "duet-blur",
+    "name": "Duet Blur",
+    "tagline": "Edit video duet làm mờ giữa ngẫu nhiên video phụ số lượng lớn",
+    "icon": "🎬",
     "status": "active",
     "category": "tiktok",
+    "free": true,
     "features": [],
     "plans": [],
     "guide": {
@@ -145,12 +146,51 @@ var PRODUCTS = [
       "faq": []
     },
     "description": null,
-    "badge": "Mới",
-    "badgeColor": "#ff6161",
+    "badge": "Free",
+    "badgeColor": "#16a34a",
     "downloadUrl": null,
-    "image": "images/duet blur.jpg",
+    "image": "images/duet-blur.jpg",
     "version": "1.0.0",
     "fileSize": "6 MB",
+    "platform": "Windows 10/11"
+  },
+  {
+    "id": "yakogameedit",
+    "name": "YakoGameEdit",
+    "tagline": "Chỉnh sửa video game chuyên nghiệp, miễn phí",
+    "icon": "🎮",
+    "status": "active",
+    "category": "other",
+    "free": true,
+    "features": [
+      "Chỉnh sửa video game",
+      "Tích hợp FFmpeg",
+      "Giao diện đơn giản",
+      "Miễn phí hoàn toàn"
+    ],
+    "plans": [],
+    "guide": {
+      "videoId": "",
+      "desc": "YakoGameEdit là phần mềm chỉnh sửa video game miễn phí. Tải về, giải nén và chạy — không cần cài đặt.",
+      "steps": [
+        {
+          "title": "Tải & giải nén",
+          "desc": "Tải file ZIP từ nút bên dưới. Giải nén ra thư mục bất kỳ."
+        },
+        {
+          "title": "Chạy phần mềm",
+          "desc": "Mở thư mục YakoGameEdit, chạy file YakoGameEdit.exe."
+        }
+      ],
+      "faq": []
+    },
+    "description": "Phần mềm chỉnh sửa video game miễn phí với FFmpeg tích hợp sẵn. Không cần cài đặt, chạy portable.",
+    "badge": "Free",
+    "badgeColor": "#16a34a",
+    "downloadUrl": "https://github.com/yakonakswoa/YakoGameEdit-Release/releases/download/v1.0/YakoGameEdit.zip",
+    "image": null,
+    "version": "1.0.0",
+    "fileSize": "201 MB",
     "platform": "Windows 10/11"
   }
 ];
