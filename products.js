@@ -1,5 +1,5 @@
 // products.js — YAKO_BIZ (Tao boi Product Manager v3)
-// Cap nhat luc: 10:11:25 03/04/2026
+// Cap nhat luc: 12:41:33 03/04/2026
 
 var PRODUCTS = [
   {
@@ -171,7 +171,7 @@ var PRODUCTS = [
   {
     "id": "tiktok-checker",
     "name": "TikTok Checker",
-    "tagline": "Kiểm tra bản quyền video TikTok, đổi tên hàng loạt, chỉnh avatar",
+    "tagline": "Kiểm tra bản quyền video TikTok số lượng lớn",
     "icon": "🔍",
     "status": "coming_soon",
     "category": "tiktok",
@@ -188,6 +188,12 @@ var PRODUCTS = [
     "guide": {
       "videoId": "",
       "desc": "TikTok Checker giúp bạn kiểm tra bản quyền video trước khi đăng TikTok. Phát hiện video vi phạm, đổi tên hàng loạt và chỉnh avatar.",
+      "images": [
+        {
+          "src": "images/tiktok-checker-guide-1775194855645.jfif",
+          "caption": ""
+        }
+      ],
       "steps": [
         {
           "title": "Tải & giải nén",
@@ -204,13 +210,13 @@ var PRODUCTS = [
       ],
       "faq": []
     },
-    "description": "Kiểm tra bản quyền video TikTok tự động. Phát hiện video vi phạm, đổi tên hàng loạt, chỉnh avatar. Hỗ trợ đa tài khoản.",
+    "description": "Kiểm tra bản quyền video TikTok tự động. Phát hiện video vi phạm,.",
     "badge": "Free",
     "badgeColor": "#16a34a",
-    "downloadUrl": "https://github.com/yakonakswoa/TikTokChecker-Release/releases/download/v1.0/TikTokChecker.zip",
-    "image": null,
+    "downloadUrl": "https://github.com/yakonakswoa/TikTokChecker-Release/releases/download/v1.1/TikTokChecker.zip",
+    "image": "images/tiktok-checker.jfif",
     "version": "1.0.0",
-    "fileSize": "316 MB",
+    "fileSize": "407 MB",
     "platform": "Windows 10/11"
   }
 ];
