@@ -1,5 +1,5 @@
 // products.js — YAKO_BIZ (Tao boi Product Manager v3)
-// Cap nhat luc: 09:27:03 03/04/2026
+// Cap nhat luc: 10:11:25 03/04/2026
 
 var PRODUCTS = [
   {
@@ -130,33 +130,7 @@ var PRODUCTS = [
   },
   {
     "id": "duet-blur",
-    "name": "Duet Blur",
-    "tagline": "Edit video duet làm mờ giữa ngẫu nhiên video phụ số lượng lớn",
-    "icon": "🎬",
-    "status": "active",
-    "category": "tiktok",
-    "free": true,
-    "features": [],
-    "plans": [],
-    "guide": {
-      "videoId": "",
-      "desc": "",
-      "images": [],
-      "steps": [],
-      "faq": []
-    },
-    "description": null,
-    "badge": "Free",
-    "badgeColor": "#16a34a",
-    "downloadUrl": null,
-    "image": "images/duet-blur.jpg",
-    "version": "1.0.0",
-    "fileSize": "6 MB",
-    "platform": "Windows 10/11"
-  },
-  {
-    "id": "yakogameedit",
-    "name": "YakoGameEdit",
+    "name": "duet-blur",
     "tagline": "Edit video duet blur số lượng lớn, chọn video nền ngẫu nhiên",
     "icon": "🎬",
     "status": "active",
@@ -172,6 +146,7 @@ var PRODUCTS = [
     "guide": {
       "videoId": "",
       "desc": "YakoGameEdit giúp bạn edit video dạng duet blur số lượng lớn với video nền ngẫu nhiên. Tải về, giải nén và chạy — không cần cài đặt.",
+      "images": [],
       "steps": [
         {
           "title": "Tải & giải nén",
@@ -188,7 +163,7 @@ var PRODUCTS = [
     "badge": "Free",
     "badgeColor": "#16a34a",
     "downloadUrl": "https://github.com/yakonakswoa/YakoGameEdit-Release/releases/download/v1.0/YakoGameEdit.zip",
-    "image": null,
+    "image": "images/duet-blur.jpg",
     "version": "1.0.0",
     "fileSize": "201 MB",
     "platform": "Windows 10/11"
