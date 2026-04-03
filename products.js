@@ -157,21 +157,21 @@ var PRODUCTS = [
   {
     "id": "yakogameedit",
     "name": "YakoGameEdit",
-    "tagline": "Chỉnh sửa video game chuyên nghiệp, miễn phí",
-    "icon": "🎮",
+    "tagline": "Edit video duet blur số lượng lớn, chọn video nền ngẫu nhiên",
+    "icon": "🎬",
     "status": "active",
-    "category": "other",
+    "category": "tiktok",
     "free": true,
     "features": [
-      "Chỉnh sửa video game",
+      "Edit video duet blur hàng loạt",
+      "Chọn video nền ngẫu nhiên",
       "Tích hợp FFmpeg",
-      "Giao diện đơn giản",
       "Miễn phí hoàn toàn"
     ],
     "plans": [],
     "guide": {
       "videoId": "",
-      "desc": "YakoGameEdit là phần mềm chỉnh sửa video game miễn phí. Tải về, giải nén và chạy — không cần cài đặt.",
+      "desc": "YakoGameEdit giúp bạn edit video dạng duet blur số lượng lớn với video nền ngẫu nhiên. Tải về, giải nén và chạy — không cần cài đặt.",
       "steps": [
         {
           "title": "Tải & giải nén",
@@ -184,7 +184,7 @@ var PRODUCTS = [
       ],
       "faq": []
     },
-    "description": "Phần mềm chỉnh sửa video game miễn phí với FFmpeg tích hợp sẵn. Không cần cài đặt, chạy portable.",
+    "description": "Edit video dạng duet blur số lượng lớn. Tự động chọn video nền ngẫu nhiên, ghép và làm mờ chuyên nghiệp. Tích hợp FFmpeg, chạy portable.",
     "badge": "Free",
     "badgeColor": "#16a34a",
     "downloadUrl": "https://github.com/yakonakswoa/YakoGameEdit-Release/releases/download/v1.0/YakoGameEdit.zip",
