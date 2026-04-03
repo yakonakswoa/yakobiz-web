@@ -1,5 +1,5 @@
 // products.js — YAKO_BIZ (Tao boi Product Manager v3)
-// Cap nhat luc: 12:41:33 03/04/2026
+// Cap nhat luc: 12:43:18 03/04/2026
 
 var PRODUCTS = [
   {
@@ -170,7 +170,7 @@ var PRODUCTS = [
   },
   {
     "id": "tiktok-checker",
-    "name": "TikTok Checker",
+    "name": "TikTok-Checker",
     "tagline": "Kiểm tra bản quyền video TikTok số lượng lớn",
     "icon": "🔍",
     "status": "coming_soon",
@@ -210,7 +210,7 @@ var PRODUCTS = [
       ],
       "faq": []
     },
-    "description": "Kiểm tra bản quyền video TikTok tự động. Phát hiện video vi phạm,.",
+    "description": "Kiểm tra bản quyền video TikTok tự động. Phát hiện video vi phạm.",
     "badge": "Free",
     "badgeColor": "#16a34a",
     "downloadUrl": "https://github.com/yakonakswoa/TikTokChecker-Release/releases/download/v1.1/TikTokChecker.zip",
