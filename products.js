@@ -173,7 +173,7 @@ var PRODUCTS = [
     "name": "TikTok Checker",
     "tagline": "Kiểm tra bản quyền video TikTok, đổi tên hàng loạt, chỉnh avatar",
     "icon": "🔍",
-    "status": "active",
+    "status": "coming_soon",
     "category": "tiktok",
     "free": true,
     "features": [
