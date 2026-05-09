@@ -1,5 +1,5 @@
 // products.js — YAKO_BIZ (Tao boi Product Manager v3)
-// Cap nhat luc: 14:25:00 03/04/2026
+// Cap nhat luc: 14:44:00 09/05/2026
 
 var PRODUCTS = [
   {
@@ -38,7 +38,7 @@ var PRODUCTS = [
     "category": "tiktok",
     "image": "images/macropilot.png",
     "downloadUrl": "https://github.com/yakonakswoa/MacroPilot-Release/releases/latest/download/MacroPilot.zip",
-    "version": "1.0.15",
+    "version": "1.0.94",
     "fileSize": "262 MB",
     "platform": "Windows 10/11",
     "guide": {
